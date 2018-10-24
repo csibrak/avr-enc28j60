@@ -3,7 +3,7 @@ MCU=atmega168
 F_CPU = 12500000
 CC=avr-gcc
 OBJCOPY=avr-objcopy
-CFLAGS=-g -mmcu=$(MCU) -Wall -Wstrict-prototypes -mcall-prologues -DF_CPU=$(F_CPU)
+CFLAGS=-g -mmcu=$(MCU) -Wall -Wstrict-prototypes -mcall-prologues -DF_CPU=$(F_CPU) -Wno-deprecated-declarations -D__PROG_TYPES_COMPAT__
 
 PROGRAMMER=stk200
 DEVICE=m168
